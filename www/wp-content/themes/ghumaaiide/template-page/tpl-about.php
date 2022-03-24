@@ -21,13 +21,10 @@ get_header();
 
 			<div class="col-lg-8 col-xxl-9 block-right">
 				<div class="content-holder">
-					<p>
-					“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.”
+					<p>Be with us and explore Nepal.
 					</p>
 
-					<p>
-						“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
-					</p>
+					<p>Whereever you go our network will follow you!</p>
 				</div>
 				<!--/.content-holder -->
 			</div>

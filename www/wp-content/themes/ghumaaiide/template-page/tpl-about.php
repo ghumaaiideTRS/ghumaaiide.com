@@ -6,7 +6,6 @@ Template Name: about-us
 get_header();
 ?>
 
-?>
 <section class="block-about container py-2 py-lg-4 pt-xxl-6 pb-xxl-8">
 	<div class="detail-block" data-aos="fade-down">
 		<div class="row">
@@ -70,9 +69,9 @@ get_header();
 <section class="about-form container py-2 py-lg-4 pt-xxl-6 pb-xxl-7">
 	<div class="form-primary form-primary--lg" data-aos="fade-down">
 		<header class="form-primary__heading text-center">
-			<h2>Sell Your House Now<small>Fill out the quick form to get an offer on your house TODAY!</small></h2>
+			<h2>Form title first part<small>second part</small></h2>
 		</header>
-		<?php echo do_shortcode('[gravityform id=2 title=false description=false ajax=true tabindex=999]') ?>
+		<?php echo do_shortcode('[contact-form-7 id="301" title="Contact form 1"]') ?>
 	</div><!-- /.form-primary -->
 </section>
 

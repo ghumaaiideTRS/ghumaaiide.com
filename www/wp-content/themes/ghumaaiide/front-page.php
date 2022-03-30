@@ -3,46 +3,33 @@
 get_header();
 ?>
 <section>
-    
-    
-		<div class="welcome">
-			<p class="big-text">GHUMAAIIDE</p>
-			
-		</div>
+    <div class="row">
+        <div class="col-lg-4 col-xxl-3 block-left">
+            <div class="title-holder">
+                <h6>About <span>Us</span></h6>
+                <h2>Ghumaaiide</h2>
+            </div>
+            <!--/.title-holder -->
+        </div>
+        <!--/.block-left -->
 
-		<div class="search">
-			<form method="get" action="#">
-							<div class="input-group">
-								<input type="text" class="form-control" name="record"
-									placeholder="Which palce are you looking for?" required>
-								<div class="input-group-btn">
-									<button class="btn btn-default" type="submit">
-										<i class="glyphicon glyphicon-search"></i>
-									</button>
-								</div>
-								<div class="input-group-btn">
-									<button class="btn btn-default" type="reset">
-										<i class="glyphicon glyphicon-reset"></i> <i
-											class="material-icons">Reset</i>
-									</button>
-								</div>
-							</div>
-						</form>
-		</div>
+        <div class="col-lg-8 col-xxl-9 block-right">
+            <div class="content-holder">
+                <p>We introduce you a complete tour guide all over Nepal. Be with us and explore Nepal.
+                </p>
 
-		<div class="tourguide">
-			<h2>A complete tour guide all over Nepal</h2>
-		</div>
-
-		<div class="container">
-			<a href="" class="btn btn-first">Go To Home</a>
-		</div>
+                <p>Whereever you go our network will follow you!</p>
+                <a class="button" href="<?php echo site_url(); ?>/about-us/">Read More</a>
+            </div>
+            <!--/.content-holder -->
+        </div>
+        <!--/.block-right -->
+    </div>
 </section>
-
-<a href="<?php echo site_url(); ?>/blog/">
-    <h2 class="section-heading">Blogs</h2>
-</a>
 <section>
+    <a href="<?php echo site_url(); ?>/blog/">
+        <h2 class="col-lg-6">Blogs</h2>
+    </a>
     <?php $args = array(
         'post_type' => 'post',
     );

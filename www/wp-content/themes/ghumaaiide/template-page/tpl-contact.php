@@ -12,6 +12,13 @@ get_header();
             <?php echo do_shortcode('[contact-form-7 id="301" title="Contact form 1"]'); ?>
         </div>
     </div>
+    <?php
+    $contact_no = get_field('contact_number', 'option');
+    if (!empty($contact_no)) { ?>
+    <p>
+    <?php echo $contact_no;?>
+    </p>
+    <?php } ?>
 </section>
 <?php
 get_footer();

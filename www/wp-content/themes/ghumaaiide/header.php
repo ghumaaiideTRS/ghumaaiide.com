@@ -73,8 +73,12 @@
     </header>
     <main>
         <section id="banner">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/home-banner.jpg;?>">
+            <img width="100%" height="50px" src="<?php bloginfo('template_url'); ?>/assets/images/home-banner.jpg;?>">
             <a href="<?php the_permalink(); ?>">
                 <h1><?php the_title(); ?></h1>
             </a>
+            <?php
+            if (function_exists('yoast_breadcrumb')) {
+                yoast_breadcrumb('</p><p id=“breadcrumbs”>', '</p><p>');
+            } ?>
         </section>

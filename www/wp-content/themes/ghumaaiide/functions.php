@@ -21,6 +21,8 @@ function mystery_theme_support()
 	add_theme_support('title-tag');
 	add_theme_support('custom-logo');
 
+	add_theme_support('custom-logo');
+
 	add_theme_support('post-thumbnails');
 	add_theme_support('post-thumbnails', array('post', 'page', 'facts', 'genres'));
 	add_theme_support('post-formats',  array('aside', 'gallery', 'quote', 'image', 'video'));
@@ -179,3 +181,34 @@ function facts_custom_post_type()
 	register_post_type('Facts', $args);
 }
 add_action('init', 'facts_custom_post_type', 0);
+
+
+/**
+ * ACF
+ */
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Facts Settings',
+		'menu_title'	=> 'Facts Settings',
+		'parent_slug'	=> 'edit.php?post_type=facts',
+	));
+}

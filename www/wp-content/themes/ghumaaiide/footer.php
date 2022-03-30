@@ -13,6 +13,7 @@
                 )
             ); ?>
         </p>
+        <?php echo do_shortcode('[contact-form-7 id="311" title="Footer Form"]');?>
     </div>
 
     <div id="right-footer">
@@ -31,8 +32,13 @@
                 </li>
             </ul>
         </div>
-        <copyright>Copywrite Ⓒ GHUMAAIIDE 2021 | Designed by Bibek Timalsina</copyright>
+        <?php
+        $copyright_text = get_field('copyright_text', 'option'); ?>
+        <?php if (!empty($copyright_text)) { ?>
+            <p><?php echo $copyright_text; ?></p><?php } ?>
+
     </div>
+
 </footer>
 
 </main>

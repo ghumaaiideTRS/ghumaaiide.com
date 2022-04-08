@@ -17,7 +17,6 @@ get_header();
             <div class="content-holder">
                 <p>We introduce you a complete tour guide all over Nepal. Be with us and explore Nepal.
                 </p>
-
                 <p>Whereever you go our network will follow you!</p>
                 <a class="button" href="<?php echo site_url(); ?>/about-us/">Read More</a>
             </div>

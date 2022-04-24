@@ -5,7 +5,6 @@ get_header();
 
 $ts_content = acf_field('contact_heading_&_description');
 
-
 $form_title = acf_field('ss_form_title');
 $form_shortcode = acf_field('ss_form_shortcode');
 

@@ -381,11 +381,6 @@ footer #social-media-footer ul li:hover a .fa-github {
 
 .pagination{
   padding:8px;
-  text-align:center;
-  font-weight:bold;
-}
-
-.pagination a{
   border-top: 3px solid white;
   display: inline-block;
   padding:8px 16px;

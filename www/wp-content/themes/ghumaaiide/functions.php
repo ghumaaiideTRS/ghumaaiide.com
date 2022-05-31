@@ -7,7 +7,6 @@ function mystery_register_styles()
 add_action('wp_enqueue_scripts', 'mystery_register_styles');
 
 
-
 $version = wp_get_theme()->get('version');
 function mystery_register_scripts()
 {
@@ -20,9 +19,6 @@ function mystery_theme_support()
 {
 	add_theme_support('title-tag');
 	add_theme_support('custom-logo');
-
-	add_theme_support('custom-logo');
-
 	add_theme_support('post-thumbnails');
 	add_theme_support('post-thumbnails', array('post', 'page', 'facts', 'genres'));
 	add_theme_support('post-formats',  array('aside', 'gallery', 'quote', 'image', 'video'));
